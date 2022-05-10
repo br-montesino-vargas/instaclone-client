@@ -1,0 +1,162 @@
+.main__profile
+{
+	margin-top: 20px !important;
+
+	.main__profile-avatar
+	{
+		display: flex !important;
+		align-items: center;
+		justify-content: center;
+
+		.ui.image.avatar
+		{
+			width: 170px;
+			height: 170px;
+
+			&:hover
+			{
+				cursor: pointer;
+			}
+		}
+	}
+
+	.main__profile-content
+	{
+		.main__profile-other
+		{
+			.main__profile-name
+			{
+				font-size: 16px;
+				margin-bottom: 3px;
+				font-weight: bold;
+			}
+
+			.main__profile-description
+			{
+				font-size: 16px;
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+.main__user-not-found
+{
+	padding: 30px 0;
+
+	p
+	{
+		text-align: center;
+
+		&:nth-child(1)
+		{
+			font-size: 25px;
+			font-weight: bold;
+		}
+
+		&:nth-child(2)
+		{
+			font-size: 16px;
+		}
+	}
+
+	a
+	{
+		display: block;
+		text-align: center;
+	}
+}
+
+.main__home
+{
+	&__left
+	{
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+}
+
+.main__feed
+{
+	padding-top: 50px;
+	height: calc( 100vh - 48px );
+	overflow-y: scroll;
+
+	&::-webkit-scrollbar
+	{
+		display: none;
+	}
+
+	&__box
+	{
+		margin-bottom: 50px;
+		border: 1px solid $border-grey;
+
+		&-user
+		{
+			background-color: $background-white;
+			padding: 15px !important;
+			color: $font-black;
+
+			img
+			{
+				margin-right: 15px !important;
+			}
+
+			span
+			{
+				font-weight: bold;
+			}
+		}
+
+		&-photo
+		{
+			height: 600px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+
+			&:hover
+			{
+				cursor: pointer;
+				opacity: 0.95;
+			}
+		}
+
+		&-actions
+		{
+			padding: 5px 5px;
+
+			i
+			{
+				margin-right: 10px !important;
+			}
+		}
+
+		&-form
+		{
+			> form
+			{
+				position: relative !important;
+			}
+		}
+	}
+}
+
+.main__not-followeds
+{
+	display: flex;
+	flex-direction: column;
+	margin-top: 35px;
+
+	&__user
+	{
+		margin-top: 20px;
+		color: $font-black;
+
+		img
+		{
+			margin-right: 15px !important;
+		}
+	}
+}

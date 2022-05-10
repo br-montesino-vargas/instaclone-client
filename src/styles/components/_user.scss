@@ -1,0 +1,200 @@
+.user__header-profile
+{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+
+	h2
+	{
+		margin: 0 30px 0 0;
+	}
+
+	button
+	{
+		padding: 5px 20px !important;
+		background-color: transparent !important;
+		border: 1px solid $border-grey !important;
+
+		&:hover, &:focus
+		{
+			background-color: transparent !important;
+		}
+	}
+}
+
+.user__profile-followers
+{
+	display: flex;
+
+	p
+	{
+		margin-right: 50px;
+		font-size: 16px;
+	}
+
+	span
+	{
+		font-weight: bold;
+	}
+
+	.user__profile-followers-list
+	{
+		cursor: pointer;
+	}
+}
+
+.user__profile-list-followers
+{
+	.user__profile-list-not-users
+	{
+		text-align: center;
+		font-size: 17px;
+		padding: 20px 0;
+	}
+
+	.user__profile-list-users
+	{
+		display: flex;
+		align-items: center;
+		margin: 10px 15px;
+
+		&:hover
+		{
+			cursor: pointer;
+		}
+
+		img
+		{
+			margin-right: 15px !important;
+		}
+
+		p
+		{
+			margin: 0;
+			font-size: 13px;
+
+			&:first-of-type
+			{
+				color: #000;
+				font-weight: bold;
+			}
+
+			&:last-of-type
+			{
+				color: $font-grey;
+			}
+		}
+	}
+}
+
+.user__preview-publication
+{
+	height: 100%;
+
+	&:hover
+	{
+		cursor: pointer;
+		opacity: 0.9;
+	}
+
+	&__image
+	{
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.user__form-comment
+{
+	position: absolute !important;
+	bottom: 0;
+	display: flex;
+	width: 100%;
+
+	.field
+	{
+		margin: 0 !important;
+		width: 100%;
+
+		.ui.input
+		{
+			height: 60px;
+
+			input
+			{
+				border: 0;
+				border-top: 1px solid $border-grey;
+				border-radius: 0;
+				padding-right: 80px;
+			}
+		}
+	}
+
+	.ui.button
+	{
+		background-color: transparent;
+		margin: 0;
+		position: absolute;
+		right: 0;
+		height: 100%;
+
+		&:hover
+		{
+			background-color: transparent;
+		}
+	}
+}
+
+.user__publication-comments
+{
+	height: calc(100% - 90px);
+	overflow-y: scroll;
+
+	&__comment
+	{
+		display: flex;
+		align-items: center;
+		padding: 10px;
+		border-bottom: 1px solid $border-grey;
+		color: $font-black;
+
+		img
+		{
+			margin-right: 15px !important;
+		}
+
+		p
+		{
+			margin: 0;
+
+			&:first-of-type
+			{
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.user__profile-actions
+{
+	height: 40px;
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+	padding-bottom: 5px;
+
+	i
+	{
+		font-size: 16px !important;
+
+		&:hover
+		{
+			cursor: pointer;
+		}
+	}
+
+	.user__profile-actions-like.active
+	{
+		color: $danger;
+	}
+}

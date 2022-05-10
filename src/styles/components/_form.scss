@@ -1,0 +1,65 @@
+.form__avatar-form
+{
+	display: flex;
+	flex-direction: column;
+
+	.ui.button
+	{
+		background-color: $background-grey-light;
+		border-bottom: 1px solid $border-grey;
+		padding: 18px 0;
+		margin: 0;
+		border-radius: 0;
+
+		&:hover
+		{
+			background-color: darken($color: $background-grey-light, $amount: 15);
+		}
+
+		&:nth-child(1)
+		{
+			color: $primary;
+		}
+
+		&:nth-child(2)
+		{
+			color: $danger;
+		}
+	}
+}
+
+.form__settings-form
+{
+	display: flex;
+	flex-direction: column;
+
+	.ui.button
+	{
+		background-color: $background-grey-light;
+		border-bottom: 1px solid $border-grey;
+		padding: 18px 0;
+		margin: 0;
+		border-radius: 0;
+
+		&:hover
+		{
+			background-color: darken($color: $background-grey-light, $amount: 15);
+		}
+	}
+}
+
+.form__password-form
+{
+	margin: 20px;
+
+	textarea
+	{
+		margin-bottom: 20px !important;
+
+		&.error
+		{
+			border: 1px solid $danger !important;
+			background-color: lighten($color: $danger, $amount: 35);
+		}
+	}
+}
